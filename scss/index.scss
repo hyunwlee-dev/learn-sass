@@ -1,0 +1,36 @@
+@import "base";
+@import "utiles";
+
+.container {
+  @include flexboxCenter($wrap: wrap);
+  @include autoMargin;
+  @include marginX(50px);
+  background-color: yellow;
+
+  @include mobile {
+    background-color: pink;
+  }
+
+  @include desktop {
+    background-color: aqua;
+  }
+}
+
+// nesting 규칙
+.book {
+  &__title {
+    font-size: rem(24px);
+  }
+
+  &__cover {
+    width: 100px + 20px;
+  }
+
+  &__info {
+    display: inline-flex;
+  }
+
+  &__summary {
+    line-height: 1.5;
+  }
+}

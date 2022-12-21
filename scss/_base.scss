@@ -1,8 +1,11 @@
 // SASS 변수
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+$bg-color: gold;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  line-height: 1.2;
+  background-color: $bg-color;
 }
